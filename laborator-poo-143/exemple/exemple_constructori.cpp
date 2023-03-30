@@ -2,6 +2,11 @@
 #include <exception>
 #include <utility>
 
+// regula cea sfanta: https://en.cppreference.com/w/cpp/language/rule_of_three
+// copy vs assignment: https://stackoverflow.com/questions/11706040/whats-the-difference-between-assignment-operator-and-copy-constructor
+// move semantics in reference: https://en.cppreference.com/w/cpp/utility/move
+// when is move used: https://stackoverflow.com/questions/13125632/when-does-move-constructor-get-called
+
 class MyClass
 {
 public:
