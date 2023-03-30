@@ -9,6 +9,8 @@ Laborator POO pentru grupa 143
 ## Resurse
 
 * [PDF Exercitii laborator](exercitii.pdf)
+* [Exercitii mosteniri, compunere, polimorfism si interfete](./exercitii_2.md)
+* [Exercitii const keyword](./exercitii_const.pdf)
 * [Exemple scrise la laborator](exemple/)
 * [Rezolvari exercitii din laborator](...)
 
