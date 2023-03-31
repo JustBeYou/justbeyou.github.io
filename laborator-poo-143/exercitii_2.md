@@ -1,7 +1,7 @@
 Exercitii mosteniri, compunere, polimorfism si interfete
 ===
 
-1. Implementare naiva
+## 1. Implementare naiva
 
 Implementati doua clase `Rectangle(width, height)` si `Waves(width, heigh)` care vor avea urmatoarele metode:
 ```cpp
@@ -58,7 +58,7 @@ Exemplu de utilizare:
 **Intrebare:** cum ati putea reduce codul duplicat intre Rectangle si Waves? Cum ati putea
 stoca obiecte de ambele tipuri intr-un singur array?
 
-2. Polimorfism cu mostenire din clasa parinte
+## 2. Polimorfism cu mostenire din clasa parinte
 
 Implementati o clasa `Shape` care sa contina codul duplicat intre `Rectangle` si `Waves`.
 Transformati clasele astfel incat sa mosteneasca clasa `Shape` si sa spurascrie doar
@@ -72,7 +72,7 @@ permita urmatorului cod sa ruleze fara erori:
     }
 ```
 
-3. Mostenire dificila
+## 3. Mostenire dificila
 
 Implementati o noua clasa numita `HallowTriangle(height)` care sa afiseze conturul
 unui triunghi, astfel:
@@ -97,7 +97,7 @@ Urmatorul cod ar trebui sa poata fi executat fara erori:
 **Intrebare:** Ce observati referitor la membrul `width`? Pare ca `HallowTriangle: Shape` 
 este o mostenire potrivita?
 
-4. Problema diamantului
+## 4. Problema diamantului
 
 Incercati sa implementati o clasa numita `RectangleWaves` care sa calculeze corpul
 unui dreptunghi urmat de "valuri". Incercati sa refolositi codul din clasele existente
@@ -105,7 +105,7 @@ mostenind `Rectangle` si `Waves`.
 
 **Intrebare:** Ce observati? Cum credeti ca ati putea rezolva problema diamantului?
 
-5. Interfete
+## 5. Interfete
 
 Vom inlocui mostenirea unei clase parinte cu polimorfismul bazat pe implementarea
 interfetelor. Transformati clasele care inainte mosteneau `Shape` in asa fel incat
@@ -125,7 +125,7 @@ sa implementeze doar urmatoarele doua interfete (renuntati la restul codului):
     };
 ```
 
-6. Compozitie
+## 6. Compozitie
 
 Considerand urmatoarea interfata:
 
@@ -151,7 +151,7 @@ executat fara erori:
     }
 ```
 
-7. Rezolvarea diamantului prin compozitie
+## 7. Rezolvarea diamantului prin compozitie
 
 Incercati din nou sa implementati `RectangleWaves` folosind compozitia de clase si fara
 a duplica implementarea `Rectangle` sau `Waves`.
