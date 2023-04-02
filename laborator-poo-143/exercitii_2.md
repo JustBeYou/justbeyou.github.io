@@ -36,6 +36,7 @@ public:
 
 // TODO: adaugati membrii necesari
 };
+```
 
 Dupa implementare, urmatoarea bucata de cod ar trebui sa ruleze fara erori:
 ```cpp
