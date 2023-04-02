@@ -223,3 +223,13 @@ interfete (clase pur abstracte)
 * interfetele ajuta la "decuplarea" utilizarii unei clase de implementarea ei concreta (orice `Drawable` va fi folosit la fel, indiferent de implementarea sa)
 
 Daca exista neclaritati, pune-mi o **intrebare** :)
+
+## B. ??? (work in progress)
+
+### 1. Destructor virtual
+
+### 2. Mostenirea multipla si virtuala
+
+### 3. Compunere in locul mostenirii (composition over inheritance)
+
+### 4. Runtime type information (RTTI)
