@@ -1,9 +1,13 @@
 Exercitii mosteniri, polimorfism si interfete
 ===
 
-In exercitiile urmatoare vom folosi exemple insiprate de [elementele din interfetele grafice](https://en.wikipedia.org/wiki/Graphical_widget#List_of_common_generic_widgets), deoarece in general acestea sunt modelate folosind POO.
+## A. Introducere
 
-## 1. Implementare clasa de baza
+In exercitiile urmatoare vom folosi exemple insiprate de [elementele din interfetele grafice](https://en.wikipedia.org/wiki/Graphical_widget#List_of_common_generic_widgets), deoarece in general acestea sunt modelate folosind POO. Vom creea cateva obiecte care sa mimeze functionalitatea unor
+elemente grafice si vom creea o ierarhie simpla de mosteniri si implementari de interfete
+care sa modeleze corespunzator problema.
+
+### 1. Implementare clasa de baza
 
 Implementati o clasa `Button` care are urmatoarea declaratie:
 ```cpp
@@ -57,7 +61,7 @@ Un output posibil este urmatorul:
 Wow! You clicked a button!
 ```
 
-## 2. Implementare clasa derivata
+### 2. Implementare clasa derivata
 
 Un **check box** este un tip special de buton care are doua stari: bifat si ne-bifat.
 Implementati o clasa derivata din clasa `Button` care sa suprascrie afisarea
@@ -102,7 +106,7 @@ Check me | X |
           ---
 ```
 
-## 3. Polimorfism: Override si virtual
+### 3. Polimorfism: Override si virtual
 
 Deoarece `CheckBox` este o clasa derivata a `Button`, putem stoca un pointer de tip
 `CheckBox*` intr-un pointer de tip `Button*`. Executati urmatoarea bucata de cod care
@@ -151,7 +155,7 @@ public:
 Rulati din nou codul de la inceputul acestui exercitiu (3). Observati ca acum codul afiseaza
 output-ul asteptat.
 
-## 4. Interfete
+### 4. Interfete (clase pur abstracte)
 
 Implementati inca o clasa numita `List` care va stoca si desena o lista
 de texte si care are urmatoarea definitie:
@@ -205,3 +209,17 @@ for (auto element : toDraw)
     delete element;
 }
 ```
+
+### Sumar
+
+Dupa exercitiile de mai sus, urmatoarele concepte ar trebui sa intelegi urmatoarele concepete:
+
+* mostenirea poate ajuta sa nu duplicam logica/cod (exemplul cu reutilizarea `Button::click`)
+* mostenirea ne poate ajuta sa folosim polimorfismul la executie (apelam o metoda derivata printr-un pointer la clasa de baza)
+* pentru polimorfismul la executie trebuie sa folosim keyword-ul `virtual` pentru a face compilatorul
+sa intelega ca avem nevoie de acest comportament
+* cand avem clase care au similaritati de comportament, dar nu impart aceasi logica, putem folosi
+interfete (clase pur abstracte)
+* interfetele ajuta la "decuplarea" utilizarii unei clase de implementarea ei concreta (orice `Drawable` va fi folosit la fel, indiferent de implementarea sa)
+
+Daca exista neclaritati, pune-mi o **intrebare** :)
