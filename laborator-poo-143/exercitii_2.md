@@ -5,6 +5,8 @@ In exercitiile urmatoare vom folosi exemple insiprate de [elementele din interfe
 
 ## Mosteniri si interfete
 
+### Implementare clasa de baza
+
 Implementati o clasa `Button` care are urmatoarea declaratie:
 ```cpp
 class Button
@@ -23,12 +25,12 @@ public:
     /**
      * Atunci cand click() este apelata, se va executa actiunea onClick().
      */
-    virtual void click();
+    void click();
 
     /**
      * Se va afisa pe ecran butonul impreuna cu textul sau.
      */
-    virtual void draw() const;
+    void draw() const;
 
 // TODO: adaugati membrii necesari
 };
@@ -55,4 +57,40 @@ Un output posibil este urmatorul:
 * Click me *
 ************
 Wow! You clicked a button!
+```
+
+### Implementare clasa derivata
+
+Un **check box** este un tip special de buton care are doua stari: bifat si ne-bifat.
+Implementati o clasa derivata din clasa `Button` care sa suprascrie afisarea
+si sa permita retinerea celor doua stari.
+
+Urmatoarea bucata de cod ar trebui sa poata fi executat fara erori:
+
+```cpp
+class CheckBox : public Button {
+    // TODO: codul vostru aici
+}
+
+// ...
+
+int main() {
+    CheckBox myCheckBox("Check me", aButtonWasClicked);
+    myCheckBox.draw();
+    myCheckBox.click();
+    myCheckBox.draw();
+
+    return 0;
+}
+```
+
+Un posibil output este urmatorul (observati schimbarea de stare a check box-ului la a doua afisare):
+```
+          ---
+Check me |   |
+          ---
+Wow! You clicked a button!
+          ---
+Check me | X |
+          ---
 ```
