@@ -16,7 +16,7 @@ Laborator POO pentru grupa 143
 2. [PDF Exercitii laborator (2)](exercitii2.pdf)
 3. [Exercitii cu keyword-ul const](./exercitii_const.pdf)
 
-# Exercitiile mele
+## Exercitiile mele
 
 Exercitiile de aici sunt mult mai putin cizelate decat cele de mai sus si destul de experimentale. Feedback highly appreciated.
 
