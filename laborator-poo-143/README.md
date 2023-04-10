@@ -10,6 +10,10 @@ Laborator POO pentru grupa 143
 
 * [Cerinte proiect](cerinte_proiect.pdf)
 
+## Exemple
+
+* [Exemple scrise la laborator](https://github.com/JustBeYou/justbeyou.github.io/tree/main/laborator-poo-143/exemple)
+
 ## Exercitii de la Gabi Majeri
 
 1. [PDF Exercitii laborator (1)](exercitii.pdf)
